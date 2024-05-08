@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/412caeed81.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineering Aspirant</p>
+                <h1>Hi, I'm <span>Prathamesh</span>  <br> Bawankar from IITRpr.</h1>
+            </div>
+    </div>
+</div>
+
+
+<!-- -------- About Section --------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/image2.png" alt="Profile Picture">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    Hello! My Name is Prathamesh Bawankar and I am a Software Engineer aspirant pursuing my BTech at IIT Ropar, I am from Chandrapur Maharashtra and my hobbies include sporsts and adventures and i like to read books.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>C/C++/Java</span><br>Proficiency</li>
+                        <li><span>DSA</span><br>Certificate of Exellence</li>
+                        <li><span>ML AI</span><br>Process Controll</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>2023-2024</span><br> Hawkscode software development Internship</li>
+                        <li><span>2024</span><br>Chanakya Fellowship IIT Bombay</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2021-2025</span><br> Btech at IIT Ropar , Chemical Engineering.</li>
+                        <li><span>2024</span><br>Minor in Computer Science through NPTEL</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>    
+
+<!-- ----------services----------- -->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">Services</h1>
+        <div class="projects-list">
+           <div>
+            <i class="fa-solid fa-arrow-trend-up"></i>
+            <h2>Web development</h2>
+            <p> I am well known with HTML, CSS, JavaScript and Python. Interested in creating new web pages and be creative in design</p>
+                <a href="#">learn more</a>
+           </div> 
+           <div>
+            <i class="fa-solid fa-network-wired"></i>
+            <h2>Software Engineering</h2>
+            <p> Design, develop, and maintain software applications, collaborating to meet project requirements. Write efficient, reliable code, conduct testing, and deploy solutions while ensuring adherence to best practices. Continuous learning and adaptation to new technologies drive my pursuit of excellence in software development.</p>
+                <a href="#">learn more</a>
+           </div> 
+           <div>
+            <i class="fa-solid fa-robot"></i>
+            <h2>AI & ML Engineer</h2>
+            <p>Designing, implementing, and deploying machine learning and AI solutions to solve complex problems across various domains</p>
+                <a href="#">learn more</a>
+           </div> 
+        </div>
+    </div>
+</div>
+
+<!--  --------Portfolio------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work1.png" alt="ML">
+                <div class="layer">
+                    <h3>Stock Trend Pridiction Website</h3>
+                    <p>Stock Trend Prediction Web Application in Python takes previous years of data and analyses the trend to price future prices using Core Python (Machine Learning),yfinance Pandas, Numpy, datareader</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            
+
+            <div class="work">
+                <img src="images/work2.png" alt="netflix">
+                <div class="layer">
+                    <h3>Netflix Clone</h3>
+                    <p>Netflix clone replicates the popular streaming platform's features, offering users a vast library of movies.It mimics Netflix's user interface, personalized recommendations made using HTML, CSS, Javascript, and BootStrap.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            
+            <div class="work">
+                <img src="images/work3.png" alt="Metro">
+                <div class="layer">
+                    <h3>Metro Assistance Website</h3>
+                    <p>This Java program efficiently calculates the fare and shortest route between source and destination stations in the Delhi
+                        Metro. Utilizing Graph and Heap data structures, it incorporates a metro map for enhanced navigation.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- contact ------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> bawankar152prathamesh@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>  +91-9022147817</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/prathamesh-bawankar-b3b331230/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <div>
+                    <a href="images/IIT_Ropar_CV_Template (3).pdf" download class="btn btn2">Download CV</a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message"  rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="copyright">
+        <p>Copyright @Pratham. <i class="fa-solid fa-heart-circle-check"></i></p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<form name="submit-to-google-sheet">
+    <input name="email" type="email" placeholder="Email" required>
+    <button type="submit">Send</button>
+  </form>
+  
+  <script>
+    const scriptURL = '<https://script.google.com/macros/s/AKfycbxmk_2xmdYdjYYLzUFzRXrFdTHzvEtwyS_F2T7IFzSSxBWrlcKaEKwxsFbqpCtXPzXW/exec>'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+     form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successful"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
